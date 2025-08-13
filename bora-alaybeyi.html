@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bora Alaybeyi</title>
@@ -26,6 +27,19 @@
         }
         hr {
             margin: 2em 0;
+        }
+        .image-gallery {
+        display: flex;
+        flex-wrap: wrap;      /* allows images to wrap to next line */
+        gap: 10px;            /* space between images */
+        justify-content: center; /* center them horizontally */
+        }
+
+        .image-gallery img {
+        width: 300px;         /* shrink images */
+        height: auto;         /* keep proportions */
+        border-radius: 5px;   /* optional rounded corners */
+        display: block;       /* remove inline gap below images */
         }
     </style>
 </head>
@@ -59,8 +73,17 @@
 
 
     <p>
-        I also really like vintage maps. Here's some pictures of them in my apartment. 
+        I also like vintage maps and newspapers. Here's some of them in my apartment. 
     </p>
+    <div class="image-gallery">
+        <img src="IMG_9107.JPG" alt="Vintage map 1">
+        <img src="IMG_9109.JPG" alt="Vintage map 2">
+        <img src="IMG_9112.JPG" alt="Vintage map 3">
+        <img src="IMG_9108.JPG" alt="Vintage map 4">
+    </div>
+
+   
+
 
 
 </body>
